@@ -13,10 +13,18 @@ spec:
         app: nextjs-app
     spec:
       containers:
-        - name: nextjs-container
+        - name: nextjs-app
           image: ghcr.io/karthi216/devops-nextjs-app:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 3000
+          resources:
+            limits:
+              cpu: "1"
+              memory: "512Mi"
+            requests:
+              cpu: "0.5"
+              memory: "256Mi"
           readinessProbe:
             httpGet:
               path: /
