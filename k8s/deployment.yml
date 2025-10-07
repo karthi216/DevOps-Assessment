@@ -10,12 +10,11 @@ spec:
   template:
     metadata:
       labels:
-        app: nextjs-app
+        app: nextjs-app  # ✅ Must match service selector
     spec:
       containers:
         - name: nextjs-app
           image: ghcr.io/karthi216/devops-nextjs-app:latest
-          imagePullPolicy: Always
           ports:
             - containerPort: 3000
 
