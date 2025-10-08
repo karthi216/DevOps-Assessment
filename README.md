@@ -16,6 +16,10 @@ ghcr.io/karthi216/devops-nextjs-app:latest
 🧠 Health Check (Optional)
 Add a route like /healthz to verify container readiness.
 
+|-----------------|----------------|-------------|------------------------|
+🎉  Opening service assessments-dev/nextjs-service in default browser...
+👉  http://127.0.0.1:36929
+
 🙌 Acknowledgments
 Built for DevOps mastery, container orchestration, and founder-grade polish.
 
