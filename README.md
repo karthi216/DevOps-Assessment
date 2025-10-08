@@ -1,13 +1,25 @@
-# DevOps Internship Assessment
+# 🚀 DevOps Next.js App
 
-## 🚀 Objective
-Containerize a Next.js app, automate CI/CD to GHCR, and deploy to Kubernetes via Minikube.
+A production-ready Next.js application containerized with Docker, deployed via Kubernetes, and published to GitHub Container Registry (GHCR). Built for DevOps assessments and scalable cloud-native workflows.
 
-## 🛠️ Setup Instructions
-```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
-cd devops-assessment-app
-npm install
-npm run dev# DevOps-Assessment
-# DevOps-Assessment
-# DevOps-Assessment
+---
+
+## 🛠️ Tech Stack
+
+- ⚛️ Next.js
+- 🐳 Docker
+- ☸️ Kubernetes
+- 📦 GitHub Container Registry (GHCR)
+- 🧪 Minikube (local cluster)
+
+ghcr.io/karthi216/devops-nextjs-app:latest
+🧠 Health Check (Optional)
+Add a route like /healthz to verify container readiness.
+
+🙌 Acknowledgments
+Built for DevOps mastery, container orchestration, and founder-grade polish.
+
+Let me know if you want to add badges, contributor credits, or a CI/CD status shield. You’re one README away from a professional-grade GitHub presence 💪
+
+📜 License
+MIT © Karthik Reddy
