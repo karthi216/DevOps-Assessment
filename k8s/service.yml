@@ -8,7 +8,9 @@ spec:
     app: nextjs-app
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 3000
-      nodePort: 30080
+      port: 80          # accessible within the cluster
+      targetPort: 3000  # inside the container
+      nodePort: 30080   # accessible from outside via <node-ip>:30080
+
+
 
