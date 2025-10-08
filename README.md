@@ -36,18 +36,21 @@ A production-ready Next.js application containerized with Docker, deployed via K
 5. Launch app  
    `minikube service nextjs-service --namespace=assessments-dev`
 
-ghcr.io/karthi216/devops-nextjs-app:latest
-🧠 Health Check (Optional)
-Add a route like /healthz to verify container readiness.
 
-## 🔄 CI/CD with GitHub Actions
+---
 
-Every push to `main` triggers:
-- Docker build
-- Image push to GHCR
-- Kubernetes-ready deployment
+## 🔄 CI/CD Pipeline
 
-Workflow file: `.github/workflows/deploy.yml`
+- Trigger: Push to `main`
+- Action: GitHub Actions workflow
+- Output: Docker image pushed to GHCR
+- Deployment: Kubernetes via Minikube
+
+## ☸️ Kubernetes Setup
+minikube start
+kubectl create namespace assessments-dev
+kubectl apply -f k8s/ --namespace=assessments-dev
+minikube service nextjs-service --namespace=assessments-dev
 
 |-----------------|----------------|-------------|------------------------|
 🎉  Opening service assessments-dev/nextjs-service in default browser...
